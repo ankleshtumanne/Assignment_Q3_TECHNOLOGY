@@ -80,63 +80,7 @@ namespace Assignment_Q3_2.Controllers
                 });
             }
         }
-        //[HttpGet("{id}")]
-        //[Authorize(Roles = "admin,user")]
-        //public async Task<ActionResult<EmployeeDTO>> GetEmployeeById(int id)
-        //{
-        //    var employee = await _employeeService.GetEmployeeByIdAsync(id);
-        //    if (employee == null)
-        //    {
-        //        return NotFound(new { message = "Employee not found" });
-        //    }
-
-        //    // If you need different behavior based on role
-        //    if (User.IsInRole("admin"))
-        //    {
-        //        // Return full details for admin
-        //        return Ok(employee);
-        //    }
-        //    else
-        //    {
-        //        // Return limited details for regular users
-        //        return Ok(new
-        //        {
-        //            Id = employee.Id,
-        //            FirstName = employee.FirstName,
-        //            LastName = employee.LastName,
-        //            Position = employee.Position
-        //            // Exclude sensitive data like salary
-        //        });
-        //    }
-        //}
-        //[HttpGet("{id}")]
-        //[Authorize(Roles = "admin,user")]
-        //public async Task<ActionResult<EmployeeDTO>> GetEmployeeById(int id)
-        //{
-        //    var user = HttpContext.User;
-
-
-        //    foreach (var claim in user.Claims)
-        //    {
-        //        Console.WriteLine($"Claim Type: {claim.Type}, Value: {claim.Value}");
-        //    }
-
-        //    if (!user.IsInRole("admin"))
-        //    {
-        //        return Forbid("You are not authorized to access this resource.");
-        //    }
-
-        //    var employee = await _employeeService.GetEmployeeByIdAsync(id);
-        //    if (employee == null)
-        //    {
-        //        return NotFound(new { message = "Employee not found" });
-        //    }
-
-        //    return Ok(employee);
-        //}
-
-
-
+        
         // POST: api/employees (Create a new employee)
         [HttpPost]
         [AllowAnonymous]
