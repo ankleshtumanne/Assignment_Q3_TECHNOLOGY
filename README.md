@@ -76,7 +76,7 @@ Installation & Setup
 
 Clone the repository:
 
-git clone https://github.com/yourusername/employee-management.git
+(https://github.com/ankleshtumanne/Assignment_Q3_TECHNOLOGY/tree/main/EmployeManegment)
 cd employee-management
 
 Install dependencies:
