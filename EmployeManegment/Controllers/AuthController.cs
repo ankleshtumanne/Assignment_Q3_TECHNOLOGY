@@ -25,44 +25,7 @@ namespace Assignment_Q3_2.Controllers
             _context = context;
         }
 
-        //[HttpPost("register")]
-        //public async Task<IActionResult> RegisterAsync([FromBody] RegisterDTO registerDto)
-        //{
-        //    try
-        //    {
-        //        if (string.IsNullOrWhiteSpace(registerDto.Username))
-        //            return BadRequest("Username cannot be empty.");
-
-        //        if (registerDto.Username.Length < 3)
-        //            return BadRequest("Username must be at least 3 characters long.");
-
-        //        if (_context.Users.Any(u => u.Username == registerDto.Username))
-        //            return BadRequest("Username already exists.");
-
-        //        if (char.IsDigit(registerDto.Username[0]))
-        //            return BadRequest("Username cannot start with a number.");
-
-        //        // Hash password with ASP.NET Identity
-        //        var hashedPassword = _passwordHasher.HashPassword(null, registerDto.Password);
-
-        //        Console.WriteLine($"Hashed Password During Registration: {hashedPassword}");
-
-        //        var user = new User
-        //        {
-        //            Username = registerDto.Username,
-        //            PasswordHash = hashedPassword,
-        //            Role = registerDto.Role
-        //        };
-
-        //        _context.Users.Add(user);
-        //        await _context.SaveChangesAsync();
-        //        return Ok("User registered successfully!");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"An error occurred: {ex.Message}");
-        //    }
-        //}
+        
         [HttpPost("register")]
         public async Task<IActionResult> RegisterAsync([FromBody] RegisterDTO registerDto)
         {
